@@ -3,4 +3,37 @@
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
+
+// colors
+$c-background: #edfae2;
+$c-secondary: #d6f2ff;
+
+// fonts
+$font-primary: 'Fresca', sans-serif;
+
+//margins
+$m-gutter: 1rem;
+
 @import 'box-sizing';
+@import 'resets';
+
+body {
+  background-color: $c-background;
+}
+
+.banner {
+  font-family: 'Fresca', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main-card {
+  margin-top: $m-gutter * 8;
+  padding: $m-gutter;
+  background-color: $c-secondary;
+}
+
+input {
+  border: 2px solid #d0d0d0;
+  height: 3rem;
+}
