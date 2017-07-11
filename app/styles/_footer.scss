@@ -1,0 +1,13 @@
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $c-pop;
+
+  &__item {
+    margin: $m-gutter;
+  }
+}

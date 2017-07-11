@@ -5,8 +5,10 @@
 // @import 'font-awesome';
 
 // colors
-$c-background: #edfae2;
-$c-secondary: #d6f2ff;
+$c-background: #fcfcf2;
+$c-secondary: #fff;
+$c-pop: #87d7ff;
+$c-black: #000;
 
 // fonts
 $font-primary: 'Fresca', sans-serif;
@@ -16,6 +18,7 @@ $m-gutter: 1rem;
 
 @import 'box-sizing';
 @import 'resets';
+@import 'footer';
 
 body {
   background-color: $c-background;
@@ -28,12 +31,31 @@ body {
 }
 
 .main-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 40vh;
   margin-top: $m-gutter * 8;
   padding: $m-gutter;
+  border-radius: 2px;
   background-color: $c-secondary;
+  box-shadow: 2px 2px 10px $c-black;
+}
+
+.directions {
+  font-family: $font-primary;
+
+  &__step {
+    font-size: 1.5rem;
+  }
 }
 
 input {
-  border: 2px solid #d0d0d0;
   height: 3rem;
+  padding: $m-gutter;
+  border: 2px solid $c-black;
+  border-radius: 2px;
+  border-color: $c-pop;
+  font-family: $font-primary;
+  font-size: 1rem;
 }
